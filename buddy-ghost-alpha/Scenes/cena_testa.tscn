@@ -1,0 +1,16 @@
+[gd_scene format=3 uid="uid://2oj620k81tvn"]
+
+[ext_resource type="PackedScene" uid="uid://c6nf0d1w5ovkb" path="res://Scenes/buddy.tscn" id="1_6y3iv"]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_g4v7s"]
+size = Vector2(333, 20)
+
+[node name="cena testa" type="Node2D" unique_id=1851502870]
+
+[node name="StaticBody2D" type="StaticBody2D" parent="." unique_id=1188063308]
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="StaticBody2D" unique_id=2109272629]
+position = Vector2(156.5, 180)
+shape = SubResource("RectangleShape2D_g4v7s")
+
+[node name="Buddy" parent="." unique_id=1732136154 instance=ExtResource("1_6y3iv")]
